@@ -17,14 +17,19 @@ body{
 .slider{
   border: solid 5px white;
   background-color:rgb(146, 146, 206); ;
-  height: calc(100%-40);
-  width: 200px;
+  height: 60vh;
+  width:1750px;
   align-items: center;
   overflow-y: hidden;
   overflow-x: scroll;
   white-space: nowrap;
   cursor: pointer;
-
+  perspective: 500px;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  position: relative;
+  margin-top: 250px;
+  margin-left: 180px;
 }
 
 .slider, .active{
@@ -36,7 +41,8 @@ body{
 
 .img{
   border: solid 2px black;
-  height: calc(100%-40);
+  /* height: calc(100%-40); */
+  height: 60vh;
   width: 200px;
   align-items: center;
   display: inline-flex;
