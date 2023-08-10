@@ -1,38 +1,41 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: rgb(223, 157, 157);
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-/* .App{
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  background-color: lightblue;  
-} */
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    margin: 0;
+    /* background-color: rgb(211, 200, 200); */
+    background-image: url('https://images.unsplash.com/photo-1607090788189-3f52e15141d2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIyfHxkaWFtb25kJTIwaW1hZ2VzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+}
 
 .slider{
-  border: solid 5px white;
-  background-color:rgb(146, 146, 206); ;
+  border: solid 3px white;
+  /* background-color:rgb(146, 146, 206); ; */
+  background-image: url('https://images.unsplash.com/photo-1602536052359-ef94c21c5948?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGFic3RyYWN0JTIwcGFpbnRpbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 60vh;
-  width:1750px;
+  width: 100%;
   align-items: center;
   overflow-y: hidden;
   overflow-x: scroll;
   white-space: nowrap;
   cursor: pointer;
   perspective: 500px;
-  transition: all 0.2s;
+  transition: all 0.4s;
   transform: scale(0.98);
   position: relative;
-  margin-top: 250px;
-  margin-left: 180px;
+  padding: 45px;
+  box-shadow: 0 0 20px 15px;
+  user-select: none;
+  font-size: 0;
 }
 
-.slider, .active{
+.slider.active {
   background-color: rgb(146, 146, 206);
   cursor: grabbing;
   cursor: -webkit-grabbing;
@@ -42,11 +45,14 @@ body{
 .img{
   border: solid 2px black;
   /* height: calc(100%-40); */
+  background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njl8fGRpYW1vbmQlMjBiYWNrZ3JvdW5kJTIwZ2lmfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 60vh;
   width: 200px;
   align-items: center;
   display: inline-flex;
   justify-content: center;
-  font-size: 50px;
+  font-size: 80px;
   font-weight: lighter;
 }
